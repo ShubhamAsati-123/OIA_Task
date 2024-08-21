@@ -22,6 +22,10 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)"],
+        lato: ["var(--font-lato)"],
+        nunito: ["var(--font-nunito)"],
+        figtree: ["var(--font-figtree)"],
       },
       colors: {
         border: "hsl(var(--border))",

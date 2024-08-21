@@ -10,3 +10,4 @@ function AuthProvider({ children }: Props) {
   return <SessionProvider>{children}</SessionProvider>;
 }
 export default AuthProvider;
+ 
