@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 const Output = ({ data }: { data: any[] }) => {
   const [tableData, setTableData] = useState<any[]>([]);
@@ -74,7 +75,11 @@ const Output = ({ data }: { data: any[] }) => {
           {tableData.map((item, index) => (
             <TableRow key={index}>
               <TableCell>{index + 1}</TableCell>
-              <TableCell>{item.links}</TableCell>
+              <TableCell>
+                <Link href={"https://" + item.links} rel="noopener noreferer" target="_blank">
+                  {item.links}
+                </Link>
+              </TableCell>
               <TableCell>{item.prefix}</TableCell>
               <TableCell>
                 <DropdownMenu>

@@ -36,8 +36,8 @@ const FileUpload = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <div className="bg-[#0D0D0D] w-[596px] h-[367px] flex justify-center items-center flex-col gap-5 mt-32">
-        <div className="w-[564px] h-[258px] border-[1px] border-white border-dashed border-opacity-20 flex flex-col justify-center items-center">
+      <div className="bg-[#0D0D0D] w-[328px] h-[352px] md:w-[596px] md:h-[367px] flex justify-center items-center flex-col gap-5 mt-32">
+        <div className="w-[296px] md:w-[564px] h-[258px] md:h-[258px] border-[1px] border-white border-dashed border-opacity-20 flex flex-col justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -113,7 +113,7 @@ const FileUpload = () => {
             </div>
           )}
         </div>
-        <div className="flex bg-[#605BFF] w-[564px] h-14 justify-center items-center gap-2 text-black rounded-xl relative">
+        <div className="flex bg-[#605BFF] w-[296px] md:w-[564px] h-14 justify-center items-center gap-2 text-black rounded-xl relative">
           <Input
             type="file"
             accept=".csv"

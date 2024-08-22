@@ -20,14 +20,16 @@ const SignIn = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-montserrat font-semibold text-left w-[422px]">
+      <h1 className="text-2xl md:text-4xl font-montserrat font-semibold text-left w-[328px] md:w-[422px] mt-7">
         Sign In
       </h1>
-      <p className="text-base font-lato my-2">Sign in to your account</p>
+      <p className="text-xs md:text-base font-lato my-2">
+        Sign in to your account
+      </p>
 
-      <div className="flex justify-center items-center my-6 gap-7">
+      <div className="flex justify-center items-center my-6 gap-5 md:gap-7">
         <Button
-          className="w-48 text-[#858585] flex gap-2 rounded-lg"
+          className="w-36 md:w-48 text-[#858585] flex gap-2 rounded-lg"
           onClick={() => signIn("google")}
         >
           <svg
@@ -56,9 +58,9 @@ const SignIn = () => {
               d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
             ></path>
           </svg>
-          Sign in with Google
+          <p className="text-[10px] md:text-xs">Sign in with Google</p>
         </Button>
-        <Button className="w-48 text-[#858585] flex gap-2 rounded-lg">
+        <Button className="w-36 md:w-48 text-[#858585] flex gap-2 rounded-lg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -88,12 +90,12 @@ const SignIn = () => {
               </g>
             </g>
           </svg>
-          Sign in with Apple
+          <p className="text-[10px] md:text-xs">Sign in with Apple</p>
         </Button>
       </div>
 
       {/* Email Login */}
-      <div className="w-[423px] h-[391px] bg-[#0D0D0D] rounded-2xl flex flex-col justify-center items-center px-8 gap-5">
+      <div className="h-[347.99px] md:w-[423px] md:h-[391px] bg-[#0D0D0D] rounded-2xl flex flex-col justify-center items-center px-8 gap-5">
         <div className="w-full flex flex-col gap-2">
           <Label htmlFor="email" className="text-base font-lato">
             Email address
